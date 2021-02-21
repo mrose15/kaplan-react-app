@@ -1,12 +1,23 @@
-body{
-    background-color: $bg-color;
+body {
+  background-color: $bg-color;
 }
 
-.btn{
+.btn {
+  border-radius: $gutters;
+  border: none;
+  font-weight: bold;
+  outline: 0;
+
+  &--primary {
     background-color: $primary-btn-color;
-    padding: $gutters * 2;
     color: $secondary-font-color;
-    border-radius: $gutters;
-    border: none;
-    font-weight: bold;
+  }
+
+  &--sm {
+    padding: $gutters;
+  }
+
+  &--lg {
+    padding: $gutters * 3;
+  }
 }
