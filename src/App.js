@@ -1,21 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BookList from './BookList';
 import Search from './Search';
 import NewBookBtn from './NewBookBtn';
 import './App.scss';
 
-
 function App() {
+  const [books, setBooks] = useState(['Book 1', 'Book 2'])
   return (
-    // Elements need to be nested, returns can only return one element. Wrapped inside of empty element called a fragment
     <main className="container">
       <div className="container__row"> 
-        <div className="container__col-xs-12">
+        <div className="container__col-xs-8">
           <h1>Books</h1>
         </div>
-        <Search />
-        <BookList />
         <NewBookBtn />
+        <Search />
+        <BookList books={books}/>
       </div>
     </main>
   );

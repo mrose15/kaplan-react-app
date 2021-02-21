@@ -1,3 +1,12 @@
 body{
     background-color: $bg-color;
 }
+
+.btn{
+    background-color: $primary-btn-color;
+    padding: $gutters * 2;
+    color: $secondary-font-color;
+    border-radius: $gutters;
+    border: none;
+    font-weight: bold;
+}

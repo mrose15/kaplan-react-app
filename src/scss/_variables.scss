@@ -2,9 +2,18 @@
 
 /* Colors Declared */
 $light-gray: #F8F8F8; 
+$blue: #2953BB;
+$white: #fff;
+$orange: #F7B166;
 
 /* Colors Defined */
-$bg-color: $light-gray; 
+$bg-color: $light-gray;
+$secondary-bg-color: $white; 
+
+$primary-btn-color: $blue;
+$secondary-font-color: $white; 
+
+$card-border: $orange;
 
 /* Spacing */
 $gutters: 5px;
