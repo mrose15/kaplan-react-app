@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import BookList from './BookList';
-import Search from './Search';
-import NewBookBtn from './NewBookBtn';
+import React from 'react';
+import BookList from './Components/BookList';
+import Search from './Components/Search';
+import NewBookBtn from './Components/NewBookBtn';
 import './App.scss';
 
 function App() {
-  const [books, setBooks] = useState(['Book 1', 'Book 2'])
   return (
     <main className="container">
       <div className="container__row"> 
@@ -14,7 +13,7 @@ function App() {
         </div>
         <NewBookBtn />
         <Search />
-        <BookList books={books}/>
+        <BookList />
       </div>
     </main>
   );

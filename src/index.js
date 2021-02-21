@@ -4,10 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-//const axios = require('axios');
-
-//console.log(resp.data);
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
