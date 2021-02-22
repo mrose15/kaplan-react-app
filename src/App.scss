@@ -1,5 +1,13 @@
+/** Global **/
 @import "./scss/_variables.scss";
 @import "./scss/_mixins.scss";
 @import "./scss/_global.scss";
 @import "./scss/_layout.scss";
-@import "./scss/_bookcard.scss";
+
+/** Components **/
+/* Button Component */
+@import "./components/Button/_button.scss";
+
+/* Book Components */
+@import "./components/BookList/_booklist.scss";
+@import "./components/Book/_book.scss";

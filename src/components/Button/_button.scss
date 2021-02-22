@@ -1,0 +1,19 @@
+.btn {
+  border-radius: $gutters;
+  border: none;
+  font-weight: bold;
+  outline: 0;
+
+  &--primary {
+    background-color: $primary-btn-color;
+    color: $secondary-font-color;
+  }
+
+  &--sm {
+    padding: $gutters;
+  }
+
+  &--lg {
+    padding: $gutters * 3;
+  }
+}
