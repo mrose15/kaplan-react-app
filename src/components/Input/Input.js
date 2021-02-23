@@ -12,15 +12,3 @@ const InputBox = (props) => {
 };
 
 export default InputBox;
-
-// export default function Search({ books }) {
-
-//   return (
-//     <div className="container__col-xs-6">
-//       <FontAwesomeIcon icon={faSearch} />
-//       {/* This is label is best for Accessibility but it's not present in the design. According to the design, this field has a placeholder instead
-//       <label htmlFor="booksearch">Search</label>*/}
-//       <input type="text" placeholder="Search" id="booksearch"></input>
-//     </div>
-//   );
-// }

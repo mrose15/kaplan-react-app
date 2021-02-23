@@ -38,19 +38,12 @@ export default class BookList extends React.Component {
       }
     });
 
-    // books.map((book) => {
-    //   const searchString = `${book.volumeInfo.title} ${book.volumeInfo.authors[0]} ${book.volumeInfo.publisher}`;
-    //   if (searchString.toLowerCase().includes(searchField.toLowerCase())) {
-    //     return searchedList.push(book);
-    //   }
-    // });
-
     return (
       <section className="container__row booklist">
         <div className="container__col-xs-6">
           <FontAwesomeIcon icon={faSearch} />
           {/* This is label is best for Accessibility but it's not present in the design. The field has a placeholder instead 
-      <label htmlFor="booksearch">Search</label>*/}
+          <label htmlFor="booksearch">Search</label>*/}
           <InputBox
             placeholder="Search"
             type="search"

@@ -1,12 +1,18 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
-function Button(props){
-    const [size] = useState(props.size);
-    const [variant] = useState(props.variant);
+const Button = React.forwardRef((props, ref) => {
+  const [size] = useState(props.size);
+  const [variant] = useState(props.variant);
 
-    return (
-        <button className={`btn btn--${variant} btn--${size}`}>{props.children}</button>
-    );
-}
+  return (
+    <button
+      ref={ref}
+      className={`btn btn--${variant} btn--${size}`}
+      onClick={props.handleChange}
+    >
+      {props.children}
+    </button>
+  );
+});
 
 export default Button;
