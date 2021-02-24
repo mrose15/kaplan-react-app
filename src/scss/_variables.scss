@@ -1,7 +1,9 @@
 /*** Variables ***/
 
 /** Colors Declared **/
+$black: #000;
 $light-gray: #f8f8f8;
+$charcoal: #3d5167;
 $dk-gray: #555;
 $blue: #2953bb;
 $white: #fff;
@@ -10,6 +12,9 @@ $dk-gray-bg: rgba(0, 0, 0, 0.5);
 $box-shadow: rgba(199, 199, 199, 1);
 
 /** Colors Defined **/
+/* font colors */
+$primary-font-color: $black;
+$secondary-font-color: $charcoal;
 
 /* bg colors */
 $bg-color: $light-gray;
@@ -19,7 +24,7 @@ $modal-bg: $dk-gray-bg;
 /* button colors */
 $primary-btn-color: $blue;
 $primary-hover-btn-color: darken($blue, 20%);
-$secondary-font-color: $white;
+$secondary-btn-color: $white;
 
 /* card colors */
 $card-border: $orange;
@@ -28,6 +33,27 @@ $card-box-shadow: $box-shadow;
 $modal-bg: $dk-gray-bg;
 
 $input-borders: $dk-gray;
+
+/** Font Sizing **/
+$base-font-size: 14;
+$line-height-px: 21;
+
+//Calculates rem
+@function rem($px: $line-height-px, $font-size: $base-font-size) {
+  @return $px / $font-size * 1rem;
+}
+
+/* Declare variables based on rem function */
+$h1: rem(24);
+$h2: rem(20);
+$h3: rem(18);
+$h4: rem(14);
+$content: rem(12);
+
+$line-height-h1: rem(25);
+$line-height-h2: rem(21);
+$line-height-h3: rem(19);
+$line-height-h4: rem(18);
 
 /** Spacing **/
 $gutters: 5px;

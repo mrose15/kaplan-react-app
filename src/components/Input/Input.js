@@ -1,13 +1,13 @@
 import React from "react";
 
-const InputBox = (props) => {
+const InputBox = ({ type, placeholder, className, handleChange, id }) => {
   return (
     <input
-      type={props.type}
-      placeholder={props.placeholder}
-      className={props.className}
-      onChange={props.handleChange}
-      id={props.id}
+      type={type}
+      placeholder={placeholder}
+      className={className}
+      onChange={handleChange}
+      id={id}
     />
   );
 };

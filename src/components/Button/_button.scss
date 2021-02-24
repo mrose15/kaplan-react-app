@@ -8,7 +8,7 @@
 
   &--primary {
     background-color: $primary-btn-color;
-    color: $secondary-font-color;
+    color: $secondary-btn-color;
     border: 3px solid $primary-btn-color;
     &:hover {
       background-color: $primary-hover-btn-color;
@@ -22,7 +22,7 @@
     border: 3px solid $primary-btn-color;
     &:hover {
       background-color: $primary-btn-color;
-      color: $secondary-font-color;
+      color: $secondary-btn-color;
     }
   }
 
