@@ -7,6 +7,7 @@ const InputBox = (props) => {
       placeholder={props.placeholder}
       className={props.className}
       onChange={props.handleChange}
+      id={props.id}
     />
   );
 };

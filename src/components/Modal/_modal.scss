@@ -1,0 +1,35 @@
+.modal {
+  &__cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: $modal-bg;
+  }
+
+  &__area {
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    height: auto;
+    padding: $gutters * 3 $gutters * 5;
+    background-color: $bg-color;
+    transform: translate(-50%, -50%);
+    min-width: 70%;
+    max-height: calc(100% - 1em);
+    border-radius: $gutters;
+  }
+
+  &__footer {
+    padding: $gutters * 2;
+    button {
+      margin-left: $gutters * 4;
+    }
+  }
+}
+
+.scroll-lock {
+  overflow: hidden;
+}

@@ -3,10 +3,27 @@
   border: none;
   font-weight: bold;
   outline: 0;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &--primary {
     background-color: $primary-btn-color;
     color: $secondary-font-color;
+    border: 3px solid $primary-btn-color;
+    &:hover {
+      background-color: $primary-hover-btn-color;
+      border: 3px solid $primary-hover-btn-color;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $primary-btn-color;
+    border: 3px solid $primary-btn-color;
+    &:hover {
+      background-color: $primary-btn-color;
+      color: $secondary-font-color;
+    }
   }
 
   &--sm {
@@ -15,5 +32,14 @@
 
   &--lg {
     padding: $gutters * 3;
+  }
+
+  &--round {
+    border-radius: 50%;
+    padding: $gutters $gutters * 1.5;
+  }
+
+  &--right {
+    float: right;
   }
 }

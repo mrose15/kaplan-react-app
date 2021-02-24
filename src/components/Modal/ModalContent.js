@@ -12,27 +12,33 @@ export class ModalContent extends Component {
           role="dialog"
           tabIndex="-1"
           aria-modal="true"
-          className="modal-cover"
+          className="modal__cover"
           onClick={this.props.onClickOutside}
           onKeyDown={this.props.onKeyDown}
         >
-          <div className="modal-area" ref={this.props.modalRef}>
-            <Button
-              variant="primary"
-              size={"lg"}
-              ref={this.props.buttonRef}
-              aria-label="Close Modal"
-              aria-labelledby="close-modal"
-              handleChange={this.props.closeModal}
-            >
-              <span id="close-modal" className="hidden">
-                Close
-              </span>
-              X
-            </Button>
-            <div className="modal-body">{this.props.content}</div>
+          <div className="modal__area" ref={this.props.modalRef}>
+            <div className="modal__body">{this.props.content}</div>
+            <div className="modal__footer align-right">
+              <Button
+                variant="secondary"
+                size={"lg"}
+                ref={this.props.buttonRef}
+                aria-label="Close Modal"
+                aria-labelledby="close-modal"
+                handleChange={this.props.closeModal}
+              >
+                <span id="close-modal">Cancel</span>
+              </Button>
+              <Button
+                variant="primary"
+                size={"lg"}
+                aria-label="Submit Book"
+                aria-labelledby="submit-book"
+              >
+                <span id="submit-book">Submit</span>
+              </Button>
+            </div>
           </div>
-          <div className="modal modal__bg"></div>
         </aside>
       </FocusTrap>,
       document.body

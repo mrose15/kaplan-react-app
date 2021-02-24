@@ -1,0 +1,8 @@
+input {
+  border: none;
+  border-bottom: 1px solid $input-borders;
+  background: transparent;
+  width: 95%;
+  padding: $gutters * 1.5;
+  margin-bottom: $gutters * 3;
+}

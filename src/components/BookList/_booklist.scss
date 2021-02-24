@@ -1,3 +1,18 @@
 .booklist {
   padding-top: $gutters * 2;
+
+  &__search {
+    display: flex;
+    margin-left: -$gutters * 3;
+  }
+
+  &__search-icon {
+    position: relative;
+    left: $gutters * 4;
+    top: $gutters;
+  }
+
+  input[type="search"] {
+    padding-left: $gutters * 5;
+  }
 }

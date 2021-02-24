@@ -40,15 +40,21 @@ export default class BookList extends React.Component {
 
     return (
       <section className="container__row booklist">
-        <div className="container__col-xs-6">
-          <FontAwesomeIcon icon={faSearch} />
-          {/* This is label is best for Accessibility but it's not present in the design. The field has a placeholder instead 
-          <label htmlFor="booksearch">Search</label>*/}
-          <InputBox
-            placeholder="Search"
-            type="search"
-            handleChange={this.editSearchTerm}
-          />
+        <div className="container__col-xs-12 container__col-md-6">
+          <div className="booklist__search">
+            <div className="booklist__search-icon">
+              <FontAwesomeIcon icon={faSearch} />
+            </div>
+            <label htmlFor="booksearch" className="sr-only">
+              Search
+            </label>
+            <InputBox
+              placeholder="Search"
+              type="search"
+              handleChange={this.editSearchTerm}
+              id="booksearch"
+            />
+          </div>
         </div>
         <div className="container__col-xs-12">
           <h2>All Books</h2>

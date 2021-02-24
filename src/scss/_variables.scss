@@ -1,25 +1,39 @@
-/** Variables **/
+/*** Variables ***/
 
-/* Colors Declared */
-$light-gray: #F8F8F8; 
-$blue: #2953BB;
+/** Colors Declared **/
+$light-gray: #f8f8f8;
+$dk-gray: #555;
+$blue: #2953bb;
 $white: #fff;
-$orange: #F7B166;
+$orange: #f7b166;
+$dk-gray-bg: rgba(0, 0, 0, 0.5);
+$box-shadow: rgba(199, 199, 199, 1);
 
-/* Colors Defined */
+/** Colors Defined **/
+
+/* bg colors */
 $bg-color: $light-gray;
-$secondary-bg-color: $white; 
+$secondary-bg-color: $white;
+$modal-bg: $dk-gray-bg;
 
+/* button colors */
 $primary-btn-color: $blue;
-$secondary-font-color: $white; 
+$primary-hover-btn-color: darken($blue, 20%);
+$secondary-font-color: $white;
 
+/* card colors */
 $card-border: $orange;
+$card-box-shadow: $box-shadow;
 
-/* Spacing */
+$modal-bg: $dk-gray-bg;
+
+$input-borders: $dk-gray;
+
+/** Spacing **/
 $gutters: 5px;
 
-/* Breakpoints + Grid */
-$grid__bp-xs: 360;
+/** Breakpoints + Grid **/
+$grid__bp-xs: 320;
 $grid__bp-sm: 576;
 $grid__bp-md: 768;
 $grid__bp-lg: 992;
@@ -27,10 +41,10 @@ $grid__bp-xl: 1200;
 $grid__cols: 12;
 
 $map-grid-props: (
-        '': 0,
-        '-xs': $grid__bp-xs,
-        '-sm': $grid__bp-sm,
-        '-md': $grid__bp-md,
-        '-lg': $grid__bp-lg,
-        '-xl': $grid__bp-xl
+  "": 0,
+  "-xs": $grid__bp-xs,
+  "-sm": $grid__bp-sm,
+  "-md": $grid__bp-md,
+  "-lg": $grid__bp-lg,
+  "-xl": $grid__bp-xl,
 );
