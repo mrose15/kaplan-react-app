@@ -6,10 +6,13 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class BookList extends React.Component {
-  state = {
-    books: [],
-    searchField: "",
-  };
+  constructor({ newBooks }) {
+    super({ newBooks });
+    this.state = {
+      books: [],
+      searchField: "",
+    };
+  }
 
   componentDidMount() {
     axios

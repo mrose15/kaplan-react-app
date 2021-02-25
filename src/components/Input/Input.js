@@ -1,6 +1,13 @@
 import React from "react";
 
-const InputBox = ({ type, placeholder, className, handleChange, id }) => {
+const InputBox = ({
+  type,
+  placeholder,
+  className,
+  handleChange,
+  id,
+  value,
+}) => {
   return (
     <input
       type={type}
@@ -8,6 +15,7 @@ const InputBox = ({ type, placeholder, className, handleChange, id }) => {
       className={className}
       onChange={handleChange}
       id={id}
+      value={value}
     />
   );
 };

@@ -1,64 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import BookList from "./components/BookList/BookList";
 import Modal from "./components/Modal/Modal";
-import Input from "./components/Input/Input";
+import NewBookForm from "./components/NewBookForm/NewBookForm";
+//import Button from "./components/Button/Button";
+//import InputBox from "./components/Input/Input";
 import "./App.scss";
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      isShown: false,
-    };
-  }
-
-  modalProps = {
+function App() {
+  const modalProps = {
     triggerText: "Create New Book",
   };
 
-  modalContent = (
-    <React.Fragment>
-      <h2>Add a New Book</h2>
-      <label htmlFor="booktitle" className="sr-only">
-        Book Title
-      </label>
-      <Input placeholder="Book Title" type="text" id="booktitle" />
+  const [inputText, setInputText] = useState("");
+  const [newBooks, setNewBooks] = useState([]);
 
-      <label htmlFor="bookauthor" className="sr-only">
-        Book Author
-      </label>
-      <Input placeholder="Book Author" type="text" id="bookauthor" />
-
-      <label htmlFor="bookpublisher" className="sr-only">
-        Book Publisher
-      </label>
-      <Input placeholder="Book Publisher" type="text" id="bookpublisher" />
-
-      <label htmlFor="bookpublishdate" className="sr-only">
-        Book Publish Date
-      </label>
-      <Input placeholder="Book Publish Date" type="text" id="bookpublishdate" />
-    </React.Fragment>
+  const modalContent = (
+    <NewBookForm
+      inputText={inputText}
+      newBooks={newBooks}
+      setNewBooks={setNewBooks}
+      setInputText={setInputText}
+    />
   );
-
-  render() {
-    return (
-      <main className="container">
-        <div className="container__row">
-          <div className="container__col-xs-4 container__col-md-8">
-            <h1>Books</h1>
-          </div>
-          <div className="container__col-xs-6 container__col-md-3 flex-align-center align-right">
-            <Modal
-              modalProps={this.modalProps}
-              modalContent={this.modalContent}
-            />
-          </div>
-          <BookList />
+  return (
+    <main className="container">
+      <div className="container__row">
+        <div className="container__col-xs-4 container__col-md-8">
+          <h1>Books</h1>
         </div>
-      </main>
-    );
-  }
+        <div className="container__col-xs-6 container__col-md-3 flex-align-center align-right">
+          <Modal modalProps={modalProps} modalContent={modalContent} />
+        </div>
+        <BookList newBooks={newBooks} />
+      </div>
+    </main>
+  );
 }
 
 export default App;

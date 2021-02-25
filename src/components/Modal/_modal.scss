@@ -23,9 +23,8 @@
   }
 
   &__footer {
-    padding: $gutters * 2;
     button {
-      margin-left: $gutters * 4;
+      margin-right: $gutters * 4;
     }
   }
 }
