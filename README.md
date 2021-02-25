@@ -10,6 +10,9 @@ In that time I learned:
 - How to build an accessible modal (with the exception of accessing the modal with tab + enter on the "Create New Book" button)
 I built a form that will take in user input and save it to local storage. I got as far as building the form and saving to state. I was unable to figure out how to render it to screen. My BookList.js file was initially set up with a JS class structure but I was unable to find out how to pass props to a class.
 
+If you'd like to see my progress, visit https://mrose15.github.io/kaplan-react-app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
