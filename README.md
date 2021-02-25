@@ -1,3 +1,12 @@
+### Notes as of 2/24: This is my first react app. I began building on the evening of Friday 2/19. The majority of this was built of the weekend of  
+- learned React components
+- A little about hooks 
+- How to structure my folder for components 
+- How to load sass into the project
+- How to pull in data with Axios
+- How to filter content dynamically
+I began on building a form that will take data and save it to local storage. I created the form that saves the state of the input but was unable to figure out how to render it to screen. My BookList.js file was initially set up with a JS class structure but I was unable to find out how to pass props to a class.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
