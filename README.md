@@ -1,11 +1,14 @@
-### Notes as of 2/24: This is my first react app. I began building on the evening of Friday 2/19. The majority of this was built of the weekend of  
-- learned React components
+#### Notes as of 2/24: This is my first react app. I began building on the evening of Friday 2/19. The majority of this was built over the weekend on 2/18 + 2/19. I spent additional time on this at night during the week of 2/22 for about 2-3 hours each day
+In that time I learned:
+- How to spin up a React app with Create React App
+- React components
 - A little about hooks 
 - How to structure my folder for components 
 - How to load sass into the project
 - How to pull in data with Axios
 - How to filter content dynamically
-I began on building a form that will take data and save it to local storage. I created the form that saves the state of the input but was unable to figure out how to render it to screen. My BookList.js file was initially set up with a JS class structure but I was unable to find out how to pass props to a class.
+- How to build an accessible modal (with the exception of accessing the modal with tab + enter on the "Create New Book" button)
+I built a form that will take in user input and save it to local storage. I got as far as building the form and saving to state. I was unable to figure out how to render it to screen. My BookList.js file was initially set up with a JS class structure but I was unable to find out how to pass props to a class.
 
 # Getting Started with Create React App
 
